@@ -1,0 +1,107 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://MainWindow.cs" type="Script" id=1]
+
+[node name="MainWindow" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -2.67029e-05
+margin_bottom = -1.52588e-05
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FolderBrowser" type="FileDialog" parent="."]
+margin_right = 759.0
+margin_bottom = 217.0
+window_title = "Open a Directory"
+mode = 2
+access = 2
+current_dir = "U:/Documents/Godot Projects/DuplicateFileFinder"
+current_path = "U:/Documents/Godot Projects/DuplicateFileFinder/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnalyzeButton" type="Button" parent="."]
+margin_left = 340.0
+margin_top = 184.0
+margin_right = 420.0
+margin_bottom = 204.0
+disabled = true
+text = "Analyze"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PrimaryDirectoryLabel" type="Label" parent="."]
+margin_left = 38.9948
+margin_top = 65.0741
+margin_right = 158.995
+margin_bottom = 79.0741
+text = "Primary Directory: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SecondaryDirectoryLabel" type="Label" parent="."]
+margin_left = 23.9006
+margin_top = 126.883
+margin_right = 159.901
+margin_bottom = 140.883
+text = "Secondary Directory: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PrimaryDirectoryBox" type="LineEdit" parent="."]
+margin_left = 165.0
+margin_top = 60.0
+margin_right = 643.0
+margin_bottom = 84.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SecondaryDirectoryBox" type="LineEdit" parent="."]
+margin_left = 165.0
+margin_top = 122.0
+margin_right = 643.0
+margin_bottom = 146.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PrimaryBrowseButton" type="Button" parent="."]
+margin_left = 659.0
+margin_top = 62.0
+margin_right = 746.0
+margin_bottom = 82.0
+text = "Browse"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SecondaryBrowseButton" type="Button" parent="."]
+margin_left = 659.0
+margin_top = 125.0
+margin_right = 746.0
+margin_bottom = 145.0
+text = "Browse"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressPanel" type="PopupPanel" parent="."]
+margin_right = 760.0
+margin_bottom = 220.0
+
+[node name="ProgressLabel" type="Label" parent="ProgressPanel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 756.0
+margin_bottom = 216.0
+text = "Analyzing Directories. . ."
+align = 1
+valign = 1
